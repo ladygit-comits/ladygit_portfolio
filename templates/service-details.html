@@ -1,0 +1,120 @@
+{% extends 'starter-page.html' %}
+{% load static %}
+
+{% block body %}
+
+<!-- Service Details Section -->
+<section id="service-details" class="service-details section" style="background-color: #000; color: #fff;">
+
+  <div class="container">
+    <div class="row gy-4">
+
+      <!-- Services List -->
+      <div class="col-lg-4 d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="100">
+        <div class="services-list">
+          <a href="#" class="service-link active" data-service="web-development"><i class="fas fa-laptop-code"></i> Web Development</a>
+          <a href="#" class="service-link" data-service="content-management"><i class="fas fa-edit"></i> Content Management</a>
+          <a href="#" class="service-link" data-service="social-media-strategy"><i class="fas fa-share-alt"></i> Social Media Strategy</a>
+          <a href="#" class="service-link" data-service="graphic-design"><i class="fas fa-paint-brush"></i> Graphic Design</a>
+          <a href="#" class="service-link" data-service="seo-optimization"><i class="fas fa-search"></i> SEO Optimization</a>
+          <a href="#" class="service-link" data-service="consultation"><i class="fas fa-headset"></i> Consultation Services</a>
+        </div>
+      </div>
+
+      <!-- Service Content -->
+      <div class="col-lg-8 d-flex justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="200">
+        <div id="service-content">
+          <!-- Web Development Content -->
+          <div class="service-description collapse show" id="web-development">
+            <h3><i class="fas fa-laptop-code"></i> Web Development</h3>
+            <p>
+              I specialize in building modern, responsive websites that cater to your unique needs. From crafting intuitive designs to implementing robust functionalities, my web development services focus on delivering seamless user experiences. 
+              Whether you need a portfolio site, e-commerce platform, or a corporate website, I ensure the solution is tailored to your goals.
+            </p>
+          </div>
+
+          <!-- Content Management Content -->
+          <div class="service-description collapse" id="content-management">
+            <h3><i class="fas fa-edit"></i> Content Management</h3>
+            <p>
+              Keeping your digital platforms up-to-date is critical for audience engagement. I offer comprehensive content management services, ensuring your website, blog, or social media remains fresh and relevant.
+              By streamlining workflows for content creation, editing, and publication, I help businesses maintain consistency and productivity across their platforms.
+            </p>
+          </div>
+
+          <!-- Social Media Strategy Content -->
+          <div class="service-description collapse" id="social-media-strategy">
+            <h3><i class="fas fa-share-alt"></i> Social Media Strategy</h3>
+            <p>
+              In today’s digital age, an effective social media strategy can elevate your brand to new heights. I design tailored strategies that increase visibility, engagement, and audience growth.
+              Through careful analysis of metrics and trends, I ensure your campaigns resonate with your target audience and align with your business objectives.
+            </p>
+          </div>
+
+          <!-- Graphic Design Content -->
+          <div class="service-description collapse" id="graphic-design">
+            <h3><i class="fas fa-paint-brush"></i> Graphic Design</h3>
+            <p>
+              A strong visual identity is key to standing out. I provide creative graphic design services, crafting compelling visuals that communicate your message effectively.
+              From logo design to marketing materials like banners and flyers, my work ensures your brand makes a lasting impression across digital and print mediums.
+            </p>
+          </div>
+
+          <!-- SEO Optimization Content -->
+          <div class="service-description collapse" id="seo-optimization">
+            <h3><i class="fas fa-search"></i> SEO Optimization</h3>
+            <p>
+              Unlock the potential of your website with my SEO optimization services. I optimize on-page and off-page elements to improve search engine rankings and drive organic traffic.
+              Through meticulous keyword research and content enhancement, I help your business achieve better visibility and connect with the right audience.
+            </p>
+          </div>
+
+          <!-- Consultation Services Content -->
+          <div class="service-description collapse" id="consultation">
+            <h3><i class="fas fa-headset"></i> Consultation Services</h3>
+            <p>
+              Navigating the digital landscape can be challenging. I provide consultation services to guide businesses on digital marketing strategies, technology trends, and process improvements.
+              Whether you're looking to expand your online presence or optimize your workflows, I offer actionable insights to help you achieve your goals efficiently.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</section>
+<!-- /Service Details Section -->
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const links = document.querySelectorAll('.service-link');
+    const descriptions = document.querySelectorAll('.service-description');
+
+    links.forEach(link => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+
+        // Remove active class from all links
+        links.forEach(l => l.classList.remove('active'));
+        link.classList.add('active');
+
+        // Hide all descriptions and show the selected one with smooth transition
+        const target = link.getAttribute('data-service');
+
+        descriptions.forEach(desc => {
+          const serviceContent = document.getElementById(target);
+          if (desc.id === target) {
+            // Show the selected service with a slower transition 
+            $(serviceContent).collapse('show').animate({ 'opacity': 1 }, 500); 
+          } else {
+            // Hide other services with a slower transition
+            $(desc).collapse('hide').animate({ 'opacity': 0 }, 500); 
+          }
+        });
+      });
+    });
+  });
+</script>
+
+{% endblock %}

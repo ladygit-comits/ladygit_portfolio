@@ -1,0 +1,65 @@
+{% extends 'starter-page.html' %}
+{% load static %}
+
+{% block body %}
+  <!-- About Section -->
+  <section class="py-5 bg-black text-light shadow-sm rounded-3">
+    <div class="container">
+      <div class="row align-items-center mt-4">
+        <!-- About Image -->
+        <div class="col-lg-4 text-center mb-4 mb-lg-0">
+          <img src="{% static 'assets/img/aboutprof.jpg' %}" class="img-fluid rounded-circle shadow-lg" alt="Faith Wanjiru Kungu">
+        </div>
+
+        <!-- About Content -->
+        <div class="col-lg-8">
+          <h2 class="display-3 text-info mb-4">About Me</h2>
+          <p class="lead text-light mb-3">Hello! I’m <strong>Faith Wanjiru Kungu</strong>, a passionate and skilled <strong>Django Developer</strong> with a strong focus on building high-performance, secure, and scalable web applications. My expertise lies in harnessing the power of <strong>Python</strong> and the <strong>Django framework</strong> to develop dynamic, user-centric applications.</p>
+
+          <p class="lead text-light mb-3">With hands-on experience in back-end development, I am proficient in designing robust APIs, optimizing databases, and implementing secure coding practices. I specialize in full-stack web development, meaning I am equally comfortable working on the front-end and back-end to deliver seamless user experiences and optimized functionality.</p>
+
+          <p class="lead text-light mb-3">I have worked on various aspects of web development, creating solutions tailored to meet user needs. From designing intuitive interfaces to integrating complex systems, my approach emphasizes functionality, security, and maintainability.</p>
+
+          <p class="lead text-light">My approach to development is centered around writing clean, maintainable, and scalable code. I believe in implementing best practices to ensure high availability, security, and speed, allowing the applications I build to grow and adapt with time.</p>
+        </div>
+      </div>
+
+      <!-- Core Skills Section -->
+      <div class="row mt-5">
+        <div class="col-12">
+          <h3 class="h3 text-info mb-4">Core Skills & Expertise</h3>
+          <ul class="list-group list-group-flush bg-black text-light border-0">
+            <li class="list-group-item d-flex align-items-center bg-black text-light border-0">
+              <i class="bi bi-check-circle text-success me-3"></i> Back-End Development: Expertise in Python, Django, Django REST Framework (DRF), API design, and integration.
+            </li>
+            <li class="list-group-item d-flex align-items-center bg-black text-light border-0">
+              <i class="bi bi-check-circle text-success me-3"></i> Database Management: Experience with MySQL and SQLite, including creating and managing databases, writing queries, and using ORM tools like Django's ORM for database interactions.
+            </li>
+            <li class="list-group-item d-flex align-items-center bg-black text-light border-0">
+              <i class="bi bi-check-circle text-success me-3"></i> Security & Authentication: Familiar with basic security practices and currently learning about OAuth, JWT, and role-based access control (RBAC).
+            </li>
+            <li class="list-group-item d-flex align-items-center bg-black text-light border-0">
+              <i class="bi bi-check-circle text-success me-3"></i> Web Optimization: Expertise in server-side performance enhancements, caching, and query optimization for fast and reliable applications.
+            </li>
+            <li class="list-group-item d-flex align-items-center bg-black text-light border-0">
+              <i class="bi bi-check-circle text-success me-3"></i> Full-Stack Development: Experience with HTML, CSS, JavaScript, React.js, and Bootstrap to build seamless user interfaces.
+            </li>
+            <li class="list-group-item d-flex align-items-center bg-black text-light border-0">
+              <i class="bi bi-check-circle text-success me-3"></i> Deployment & Hosting: Familiar with Docker, Kubernetes, Heroku, DigitalOcean, Nginx, Gunicorn, and CI/CD pipelines for smooth deployment processes.
+            </li>
+            <li class="list-group-item d-flex align-items-center bg-black text-light border-0">
+              <i class="bi bi-check-circle text-success me-3"></i> Testing & Debugging: Expertise in unit testing, integration testing, and test automation using Django's built-in framework and Selenium.
+            </li>
+            <li class="list-group-item d-flex align-items-center bg-black text-light border-0">
+              <i class="bi bi-check-circle text-success me-3"></i> Version Control: Proficient with Git, GitHub, and GitLab for collaborative development and version management.
+            </li>
+            <li class="list-group-item d-flex align-items-center bg-black text-light border-0">
+              <i class="bi bi-check-circle text-success me-3"></i> Agile Development: Experienced with Scrum and Kanban methodologies, and using tools like Trello for efficient project management.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End About Section -->
+{% endblock %}
