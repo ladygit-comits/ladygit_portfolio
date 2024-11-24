@@ -27,46 +27,50 @@
   <link href="{% static 'assets/css/main.css' %}" rel="stylesheet">
 
   <style>
-ul li a[href='#testimonials'],
-ul li a[href='{% url "skills" %}'],
-ul li a[href='{% url "index" %}'],
-ul li a[href='{% url "about" %}'],
-ul li a[href='{% url "resume" %}'],
-ul li a[href='{% url "portfolio" %}'],
-ul li a[href='{% url "service" %}'],
-ul li a[href='#contact'],
-ul li a[href='{% url "login" %}'] {
-  font-size: 1.0rem; 
-  padding: 5px 0;  
-}
+    /* General link styling for all nav links */
+    ul li a[href='#testimonials'],
+    ul li a[href='{% url "skills" %}'],
+    ul li a[href='{% url "index" %}'],
+    ul li a[href='{% url "about" %}'],
+    ul li a[href='#resume'],
+    ul li a[href='{% url "portfolio" %}'],
+    ul li a[href='{% url "service" %}'],
+    ul li a[href='#contact'],
+    ul li a[href='{% url "login" %}'] {
+      font-size: 1.0rem; 
+      padding: 5px 0;    
+    }
+ 
 
-ul li a[href='#testimonials'] i,
-ul li a[href='{% url "skills" %}'] i,
-ul li a[href='{% url "index" %}'] i,
-ul li a[href='{% url "about" %}'] i,
-ul li a[href='{% url "resume" %}'] i,
-ul li a[href='{% url "portfolio" %}'] i,
-ul li a[href='{% url "service" %}'] i,
-ul li a[href='#contact'] i,
-ul li a[href='{% url "login" %}'] i {
-  font-size: 1.3rem; 
-}
+    ul li a[href='#testimonials'] i,
+    ul li a[href='{% url "skills" %}'] i,
+    ul li a[href='{% url "index" %}'] i,
+    ul li a[href='{% url "about" %}'] i,
+    ul li a[href='#resume'] i, 
+    ul li a[href='{% url "portfolio" %}'] i,
+    ul li a[href='{% url "service" %}'] i,
+    ul li a[href='#contact'] i,
+    ul li a[href='{% url "login" %}'] i {
+      font-size: 1.3rem; 
+    }
+    
 
-ul li a[href='#testimonials'],
-ul li a[href='{% url "skills" %}'],
-ul li a[href='{% url "index" %}'],
-ul li a[href='{% url "about" %}'],
-ul li a[href='{% url "resume" %}'],
-ul li a[href='{% url "portfolio" %}'],
-ul li a[href='{% url "service" %}'],
-ul li a[href='#contact'],
-ul li a[href='{% url "login" %}'] {
-  display: flex;
-  align-items: center; 
-  gap: 9px;  
-  margin-left: 7px;
-}
-</style>
+    ul li a[href='#testimonials'],
+    ul li a[href='{% url "skills" %}'],
+    ul li a[href='{% url "index" %}'],
+    ul li a[href='{% url "about" %}'],
+    ul li a[href='#resume'],
+    ul li a[href='{% url "portfolio" %}'],
+    ul li a[href='{% url "service" %}'],
+    ul li a[href='#contact'],
+    ul li a[href='{% url "login" %}'] {
+      display: flex;        
+      align-items: center;  
+      gap: 9px;              
+      margin-left: 7px;      
+    }
+    </style>
+    
 </head>
 
 
@@ -90,26 +94,25 @@ ul li a[href='{% url "login" %}'] {
       <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
       <a href="#" class="google-plus"><i class="bi bi-skype"></i></a>
       <a href="https://www.linkedin.com/in/faith-kung-u/" target="_blank" class="linkedin"><i class="bi bi-linkedin"></i></a>
-    </div>
+    </div> 
 
   
 
     
     <nav id="navmenu" class="navmenu">
       <ul>
-        
-        <li><a href="{% url 'index' %}"><i class="bi bi-house navicon active"></i>Home</a></li>
-        <li><a href="{% url 'about' %}"><i class="bi bi-person-circle navicon"></i>About</a></li>
-        <li><a href="{% url 'skills' %}"><i class="bi bi-laptop navicon"></i>Skills</a></li> 
-        <li><a href="{% url 'resume' %}"><i class="bi bi-file-earmark-text navicon"></i>Resume</a></li>
-        <li><a href="{% url 'portfolio' %}"><i class="bi bi-images navicon"></i>Portfolio</a></li>
-        <li><a href="{% url 'service' %}"><i class="bi bi-hdd-stack navicon"></i>Services</a></li>
-        <li><a href="#testimonials"><i class="bi bi-person-lines-fill navicon"></i>Testimonials</a></li> 
-        <li><a href="#contact"><i class="bi bi-envelope navicon"></i>Contact</a></li>
-        <li class="nav-item admin-item"><a href="{% url 'login' %}"><i class="bi bi-lock navicon"></i> Admin</a></li>
-        
+        <li><a href="{% url 'index' %}"><i class="bi bi-house navicon active"></i> Home </a></li>
+        <li><a href="{% url 'about' %}"><i class="bi bi-person-circle navicon"></i> About ↳</a></li>
+        <li><a href="{% url 'skills' %}"><i class="bi bi-laptop navicon"></i> Skills ↳</a></li>
+        <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume ●</a></li>
+        <li><a href="{% url 'portfolio' %}"><i class="bi bi-images navicon"></i> Portfolio ↳</a></li>
+        <li><a href="{% url 'service' %}"><i class="bi bi-hdd-stack navicon"></i> Services ↳</a></li>
+        <li><a href="#testimonials"><i class="bi bi-person-lines-fill navicon"></i> Testimonials ●</a></li>
+        <li><a href="#contact"><i class="bi bi-envelope navicon"></i> Contact ●</a></li>
+        <li class="nav-item admin-item"><a href="{% url 'login' %}"><i class="bi bi-lock navicon"></i> Admin ↳</a></li>
       </ul>
     </nav>
+    
       <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
     </nav>
   </header>
@@ -123,9 +126,9 @@ ul li a[href='{% url "login" %}'] {
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
       
-        <h2>Faith Kung'u</h2>
+        <h2 id="home">Faith Kung'u</h2>
 
-        <p>I'm a <span class="typed" data-typed-items="Designer, Developer, Freelancer, Social Strategist">Designer</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
+        <p>I'm a <span class="typed" data-typed-items="Designer, Developer, Freelancer, Social Strategist,Cybersecurity Analyst">Designer</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
       </div>
 
     </section><!-- /Hero Section -->
@@ -135,8 +138,9 @@ ul li a[href='{% url "login" %}'] {
       <div class="container section-title" data-aos="fade-up">
         <h2>About Me</h2>
         <p>
-          Hello! I’m Faith Wanjiru Kung’u, a passionate Django developer with a strong foundation in Python and expertise in building secure, scalable web applications. With a focus on back-end development and skills in full-stack technologies, I excel at designing APIs, optimizing databases, and implementing best practices for security and performance. I am eager to contribute my technical expertise to a dynamic team and continue growing professionally.
-      </p>      
+          Hello! I’m Faith Wanjiru Kung’u, a versatile professional with a passion for design, development, and cybersecurity. With a strong foundation in both creative and technical disciplines, I strive to craft innovative, user-focused solutions that are not only visually engaging but also secure and efficient. My commitment to continuous learning and improvement drives me to deliver results that align with both user needs and business goals. I’m excited to contribute my expertise to teams that value creativity, security, and impactful solutions.
+        </p>
+           
       </div><!-- End Section Title -->
     </section>
     
@@ -226,7 +230,7 @@ ul li a[href='{% url "login" %}'] {
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Skills</h2>
-        <p>I possess a diverse set of skills that enhance my ability to deliver innovative solutions in the field of information technology.</p>
+        <p>I possess a diverse skill set that enables me to deliver innovative solutions across various areas of information technology</p>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -236,51 +240,38 @@ ul li a[href='{% url "login" %}'] {
           <div class="col-lg-6">
 
             <div class="progress">
-              <span class="skill"><span>HTML</span> <i class="val">100%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+              <span class="skill">Web Development (HTML, CSS, JavaScript) <i class="val">90%</i></span>
+          <div class="progress-bar-wrap">
+            <div class="progress-bar" style="width: 90%;"></div>
               </div>
             </div><!-- End Skills Item -->
 
             <div class="progress">
-              <span class="skill"><span>CSS</span> <i class="val">100%</i></span>
+              <span class="skill">Python & Django <i class="val">80%</i></span>
               <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="progress-bar" style="width: 80%;"></div>
               </div>
             </div><!-- End Skills Item -->
 
-            <div class="progress">
-              <span class="skill"><span>JavaScript</span> <i class="val">75%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
+        
 
           </div>
 
           <div class="col-lg-6">
 
             <div class="progress">
-              <span class="skill"><span>Django</span> <i class="val">70%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+              <span class="skill">Cybersecurity <i class="val">80%</i></span>
+          <div class="progress-bar-wrap">
+            <div class="progress-bar" style="width: 80%;"></div>
               </div>
             </div><!-- End Skills Item -->
 
             <div class="progress">
-              <span class="skill"><span>WordPress/CMS</span> <i class="val">90%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              <span class="skill">UI/UX Design Principles <i class="val">85%</i></span>
+          <div class="progress-bar-wrap">
+            <div class="progress-bar" style="width: 85%;"></div>
               </div>
             </div><!-- End Skills Item -->
-
-            <div class="progress">
-              <span class="skill"><span>Python</span> <i class="val">90%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
-            
           </div>
 
         </div>
@@ -295,7 +286,7 @@ ul li a[href='{% url "login" %}'] {
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Resume</h2>
-        <p>Aspiring Information Technology professional with practical experience in web development and social media management. Committed to leveraging my skills and enthusiasm to make meaningful contributions in the tech industry.</p>
+        <p>Discover my professional journey in Information Technology, where I focus on delivering digital user-centered solutions and continuously enhance my skills to stay at the forefront of the tech industry.</p>
       </div><!-- End Section Title -->
 
       <div class="container">
@@ -307,7 +298,7 @@ ul li a[href='{% url "login" %}'] {
             
             <h3 class="resume-title">Summary</h3>
             <div class="resume-item">
-              <p> <br>I'm an Information Technology student with hands-on experience in web development and social media management. Passionate about tech, I aim to contribute to impactful projects while continuously improving my skills. I work well in team settings and am always eager to learn.</p>
+              <p> <br>As an Information Technology professional with a solid background in web development, I focus on creating digital solutions that prioritize the user experience while ensuring functionality and impact. I’m passionate about continuous learning and always seek opportunities to grow, both personally and professionally, as I contribute to the tech community.</p>
             </div><!-- End Resume Item -->
 
 
@@ -398,9 +389,7 @@ ul li a[href='{% url "login" %}'] {
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Portfolio</h2>
-        <p>Welcome to my portfolio! Here, you'll find a selection of my projects that showcase my skills in web development and social media management. Each project reflects my commitment to quality and innovation. Explore my work to see how I bring ideas to life!
-
-        </p>
+        <p>Discover my work in Information Technology, where I create practical and innovative digital solutions across various domains.</p>
       </div><!-- End Section Title -->
 
       <div class="container">
@@ -414,6 +403,7 @@ ul li a[href='{% url "login" %}'] {
             <li data-filter=".filter-branding">Branding and Design</li>
             <li data-filter=".filter-social">Social Media Campaigns</li>
             <li data-filter=".filter-interactive">Interactive Media</li>
+            <li data-filter=".filter-interactive">Cybersecurity Projects</li>
           </ul><!-- End Portfolio Filters -->
 
           <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
@@ -466,64 +456,63 @@ ul li a[href='{% url "login" %}'] {
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Services</h2>
-        <p>I offer a range of services in web development and digital content management, including:</p>
+        <p>I offer in a wide range of services, including:</p>
       </div><!-- End Section Title -->
-
       <div class="container">
-
         <div class="row gy-4">
-
+      
           <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
-            <div class="icon flex-shrink-0"><i class="bi bi-briefcase"></i></div>
+            <div class="icon flex-shrink-0"><i class="bi bi-laptop"></i></div>
             <div>
               <h4 class="title"><a href="service-details.html" class="stretched-link">Web Development</a></h4>
               <p class="description">Creating responsive and user-friendly websites that enhance user experience and drive engagement. I develop tailored solutions to meet client needs, ensuring optimal performance and functionality.</p>
             </div>
           </div>
-          <!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="200">
-            <div class="icon flex-shrink-0"><i class="bi bi-card-checklist"></i></div>
-            <div>
-              <h4 class="title"><a href="service-details.html" class="stretched-link">Content Management</a></h4>
-              <p class="description">Managing and updating digital content across various platforms to ensure consistency and relevance. I streamline processes for content creation, editing, and publication, enhancing overall productivity.</p>
-            </div>
-          </div><!-- End Service Item -->
-
+       <!-- End Service Item -->
           <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="300">
-            <div class="icon flex-shrink-0"><i class="bi bi-bar-chart"></i></div>
+            <div class="icon flex-shrink-0"><i class="bi bi-share"></i></div>
             <div>
               <h4 class="title"><a href="service-details.html" class="stretched-link">Social Media Strategy</a></h4>
               <p class="description">Designing and implementing effective social media strategies to boost brand visibility and engagement. I analyze metrics to optimize content and improve audience interaction.</p>
             </div>
-          </div><!-- End Service Item -->
-
+          </div>
+       <!-- End Service Item -->
           <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="400">
-            <div class="icon flex-shrink-0"><i class="bi bi-binoculars"></i></div>
+            <div class="icon flex-shrink-0"><i class="bi bi-palette"></i></div>
             <div>
               <h4 class="title"><a href="service-details.html" class="stretched-link">Graphic Design</a></h4>
               <p class="description">Developing visually appealing graphics and marketing materials that align with brand identity. My design work includes logos, banners, and promotional content for digital and print use.</p>
             </div>
-          </div><!-- End Service Item -->
-
+          </div>
+       <!-- End Service Item -->
           <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="500">
-            <div class="icon flex-shrink-0"><i class="bi bi-brightness-high"></i></div>
+            <div class="icon flex-shrink-0"><i class="bi bi-search"></i></div>
             <div>
               <h4 class="title"><a href="service-details.html" class="stretched-link">SEO Optimization</a></h4>
               <p class="description">Implementing best practices in search engine optimization to improve website visibility and ranking. I conduct keyword research and optimize content to attract organic traffic.</p>
             </div>
-          </div><!-- End Service Item -->
-
+          </div>
+       <!-- End Service Item -->
           <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="600">
-            <div class="icon flex-shrink-0"><i class="bi bi-calendar4-week"></i></div>
+            <div class="icon flex-shrink-0"><i class="bi bi-person-check"></i></div>
             <div>
               <h4 class="title"><a href="service-details.html" class="stretched-link">Consultation Services</a></h4>
               <p class="description">Providing expert advice on digital marketing strategies and technology trends. I offer tailored recommendations to help businesses leverage technology for growth and efficiency.</p>
             </div>
-          </div><!-- End Service Item -->
+          </div>
+       <!-- End Service Item -->
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="700">
+            <div class="icon flex-shrink-0"><i class="bi bi-shield-lock"></i></div>
+            <div>
+              <h4 class="title"><a href="service-details.html" class="stretched-link">Cybersecurity Services</a></h4>
+              <p class="description">Providing robust cybersecurity solutions to protect digital assets from potential threats. I assess, implement, and monitor security measures to safeguard websites, networks, and sensitive data from cyberattacks.</p>
+            </div>
+          </div>
+       <!-- End Service Item -->
+        </div>
+      </div>
 
         </div>
-
       </div>
 
     </section><!-- /Services Section -->
@@ -649,6 +638,59 @@ ul li a[href='{% url "login" %}'] {
       <div class="container section-title" data-aos="fade-up">
         <h2>Contact</h2>
         <p>If you'd like to get in touch, feel free to reach out via the following channels. I'm open to discussing new opportunities, collaborations, or any inquiries you may have.</p>
+        <div class="social-links text-center mt-4">
+          <a href="#" class="twitter me-3" style="font-size: 24px; color: #1A202C; transition: transform 0.3s, color 0.3s, box-shadow 0.3s; display: inline-block;">
+            <i class="bi bi-twitter"></i>
+          </a>
+          <a href="#" class="facebook me-3" style="font-size: 24px; color: #2D4379; transition: transform 0.3s, color 0.3s, box-shadow 0.3s; display: inline-block;">
+            <i class="bi bi-facebook"></i>
+          </a>
+          <a href="#" class="instagram me-3" style="font-size: 24px; color: #6F2A4F; transition: transform 0.3s, color 0.3s, box-shadow 0.3s; display: inline-block;">
+            <i class="bi bi-instagram"></i>
+          </a>
+          <a href="#" class="google-plus me-3" style="font-size: 24px; color: #2C6B3F; transition: transform 0.3s, color 0.3s, box-shadow 0.3s; display: inline-block;">
+            <i class="bi bi-skype"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/faith-kung-u/" target="_blank" class="linkedin" style="font-size: 24px; color: #1F3A53; transition: transform 0.3s, color 0.3s, box-shadow 0.3s; display: inline-block;">
+            <i class="bi bi-linkedin"></i>
+          </a>
+        </div>
+        
+        <style>
+          .social-links a {
+            position: relative;
+            display: inline-block;
+            padding: 10px;
+            border-radius: 50%;
+            text-align: center;
+            color: inherit;
+            text-decoration: none;
+            transition: transform 0.3s, color 0.3s, box-shadow 0.3s;
+          }
+        
+          /* Hover Effects */
+          .social-links a:hover {
+            transform: translateY(-5px);  /* Slight upward movement */
+            color: #fff;  /* Change color to white */
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.7);  /* Glowing effect */
+          }
+        
+          .social-links a:hover i {
+            animation: icon-bounce 0.5s infinite alternate;  /* Add bounce effect to the icon */
+          }
+        
+          /* Icon Bounce Animation */
+          @keyframes icon-bounce {
+            0% {
+              transform: scale(1);
+            }
+            100% {
+              transform: scale(1.2);  /* Slightly increase size on hover */
+            }
+          }
+        </style>
+        
+        
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">

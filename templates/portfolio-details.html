@@ -3,60 +3,59 @@
 
 {% block body %}
 
-<!-- Portfolio Section -->
-<section id="portfolio" class="portfolio section light-background">
+ <!-- Portfolio Section -->
+ <section id="portfolio" class="portfolio section light-background">
+
   <!-- Section Title -->
   <div class="container section-title" data-aos="fade-up">
     <h2>Portfolio</h2>
+    <p>Discover my work in Information Technology, where I create practical and innovative digital solutions across various domains.</p>
   </div><!-- End Section Title -->
 
   <div class="container">
-    <!-- Portfolio Filters -->
+
     <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
       <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
         <li data-filter="*" class="filter-active">All</li>
         <li data-filter=".filter-web">Web Development Projects</li>
         <li data-filter=".filter-app">Apps</li>
         <li data-filter=".filter-branding">Branding and Design</li>
         <li data-filter=".filter-social">Social Media Campaigns</li>
-        <li data-filter=".filter-community">Community Engagement Initiatives</li>
         <li data-filter=".filter-interactive">Interactive Media</li>
+        <li data-filter=".filter-interactive">Cybersecurity Projects</li>
       </ul><!-- End Portfolio Filters -->
 
-      <!-- Portfolio Container -->
       <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
-        
-        <!-- Web Development Project: Kavanda -->
+
         <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
           <div class="portfolio-content h-100">
-            <img src="{% static 'assets/img/K.png' %}" class="img-fluid" alt="Kavanda Branding">
+            <img src="{% static 'assets\img\K.png' %}" class="img-fluid" alt="">
             <div class="portfolio-info">
               <h4>KAVANDA</h4>
-              <a href="{% static 'assets/img/K.png' %}" title="Kavanda Branding" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              <a href="{% static 'assets\img\K.png' %}" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
               <a href="https://www.canva.com/design/DAGUjt3Bdwc/LQUVVfOIN9_kbbZzhRO_HA/view?utm_content=DAGUjt3Bdwc&utm_campaign=designshare&utm_medium=link&utm_source=editor" target="_blank" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
             </div>
           </div>
         </div><!-- End Portfolio Item -->
 
-        <!-- Web Development Project: Vision Hardware Prototype -->
         <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
           <div class="portfolio-content h-100">
-            <img src="{% static 'assets/img/portfolio/vision.png' %}" class="img-fluid" alt="Vision Hardware Prototype">
+            <img src="{% static 'assets\img\portfolio\vision.png' %}" class="img-fluid" alt="">
             <div class="portfolio-info">
               <h4>Vision Hardware Prototype</h4>
-              <a href="{% static 'assets/img/portfolio/vision.png' %}" title="Vision Hardware Prototype" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              <a href="{% static 'assets\img\portfolio\vision.png' %}"  title="Vision Hardware Prototype" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
               <a href="https://www.figma.com/proto/XvEEr6qWIRm4gYzQHXyIuG/Untitled?node-id=102-808&t=8Hsy7KfhOlwyD2ag-1&scaling=contain&content-scaling=fixed&page-id=0%3A1" target="_blank" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
             </div>
           </div>
         </div><!-- End Portfolio Item -->
 
-        <!-- Branding Project: Health Bridge Hospital -->
         <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
           <div class="portfolio-content h-100">
-            <img src="{% static 'assets/img/branding.png' %}" class="img-fluid" alt="Health Bridge Hospital Branding">
+            <img src="{% static 'assets\img\branding.png' %}" class="img-fluid" alt="">
             <div class="portfolio-info">
-              <h4>Health Bridge Hospital</h4>
-              <a href="{% static 'assets/img/branding.png' %}" title="Health Bridge Hospital Branding" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              <h4>Health Bridge hospital</h4>
+              <a href="{% static 'assets\img\branding.png' %}"  title="Health Bridge hospital" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
               <a href="https://www.canva.com/design/DAGXBHrUvZs/R4Sw6du1FmmDeqlfu1LmCA/view?utm_content=DAGXBHrUvZs&utm_campaign=designshare&utm_medium=link&utm_source=editor" target="_blank" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
             </div>
           </div>
@@ -65,8 +64,11 @@
       
       </div><!-- End Portfolio Container -->
 
-    </div><!-- End Isotope Layout -->
-  </div><!-- End Container -->
-</section><!-- End Portfolio Section -->
+    </div>
+
+  </div>
+
+</section><!-- /Portfolio Section -->
+
 
 {% endblock %}

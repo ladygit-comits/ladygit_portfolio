@@ -28,41 +28,47 @@
 
   <!-- Main CSS File -->
   <link href="{% static 'assets/css/main.css' %}" rel="stylesheet">
-<style>
-  ul li a[href='{% url "index" %}'],
-ul li a[href='{% url "about" %}'],
-ul li a[href='{% url "resume" %}'],
-ul li a[href='{% url "portfolio" %}'],
-ul li a[href='{% url "service" %}'],
-ul li a[href='{% url "contactdit" %}'],
-ul li a[href='{% url "login" %}'] {
-  font-size: 1.0rem; 
-  padding: 5px 0;  
-}
-
-ul li a[href='{% url "index" %}'] i,
-ul li a[href='{% url "about" %}'] i,
-ul li a[href='{% url "resume" %}'] i,
-ul li a[href='{% url "portfolio" %}'] i,
-ul li a[href='{% url "service" %}'] i,
-ul li a[href='{% url "contactdit" %}'] i,
-ul li a[href='{% url "login" %}'] i {
-  font-size: 1.3rem; 
-}
-
-ul li a[href='{% url "index" %}'],
-ul li a[href='{% url "about" %}'],
-ul li a[href='{% url "resume" %}'],
-ul li a[href='{% url "portfolio" %}'],
-ul li a[href='{% url "service" %}'],
-ul li a[href='{% url "contactdit" %}'],
-ul li a[href='{% url "login" %}'] {
-  display: flex;
-  align-items: center; 
-  gap: 9px;  
-  margin-left: 7px;
-}
-</style>
+  <style>
+    ul li a[href='#testimonials'],
+    ul li a[href='{% url "skills" %}'],
+    ul li a[href='{% url "index" %}'],
+    ul li a[href='{% url "about" %}'],
+    ul li a[href='{% url "resume" %}'],
+    ul li a[href='{% url "portfolio" %}'],
+    ul li a[href='{% url "service" %}'],
+    ul li a[href='#contact'],
+    ul li a[href='{% url "login" %}'] {
+      font-size: 1.0rem; 
+      padding: 5px 0;  
+    }
+    
+    ul li a[href='#testimonials'] i,
+    ul li a[href='{% url "skills" %}'] i,
+    ul li a[href='{% url "index" %}'] i,
+    ul li a[href='{% url "about" %}'] i,
+    ul li a[href='{% url "resume" %}'] i,
+    ul li a[href='{% url "portfolio" %}'] i,
+    ul li a[href='{% url "service" %}'] i,
+    ul li a[href='#contact'] i,
+    ul li a[href='{% url "login" %}'] i {
+      font-size: 1.3rem; 
+    }
+    
+    ul li a[href='#testimonials'],
+    ul li a[href='{% url "skills" %}'],
+    ul li a[href='{% url "index" %}'],
+    ul li a[href='{% url "about" %}'],
+    ul li a[href='{% url "resume" %}'],
+    ul li a[href='{% url "portfolio" %}'],
+    ul li a[href='{% url "service" %}'],
+    ul li a[href='#contact'],
+    ul li a[href='{% url "login" %}'] {
+      display: flex;
+      align-items: center; 
+      gap: 9px;  
+      margin-left: 7px;
+    }
+    </style>
  
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
@@ -95,8 +101,9 @@ ul li a[href='{% url "login" %}'] {
 
     <nav id="navmenu" class="navmenu">
       <ul>
-        <li><a href="{% url 'index' %}"><i class="bi bi-house navicon"></i>Home</a></li>
+        <li><a href="{% url 'index' %}"><i class="bi bi-house navicon"></i>Home ↳</a></li>
         <li><a href="{% url 'about' %}"><i class="bi bi-person navicon"></i> About</a></li>
+        <li><a href="{% url 'skills' %}"><i class="bi bi-laptop navicon"></i>Skills</a></li> 
         <li><a href="{% url 'resume' %}"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
         <li><a href="{% url 'portfolio' %}"><i class="bi bi-images navicon"></i> Portfolio</a></li>
         <li><a href="{% url 'service' %}"><i class="bi bi-hdd-stack navicon"></i> Services</a></li>
